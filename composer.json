@@ -1,0 +1,20 @@
+{
+    "name": "xinix-technology/bono-mail",
+    "description": "Mailer for bono",
+    "require": {
+        "swiftmailer/swiftmailer": "~5.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ganesha",
+            "email": "reekoheek@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "BonoMail": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
