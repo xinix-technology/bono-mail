@@ -43,4 +43,14 @@ return array(
 
 # Howto Use
 
-TBD
+```php
+
+$result = \BonoMail\Mail::factory('Some subject for you')
+    ->body('test', array())
+    ->to(array('jane@doe.com'))
+    ->send();
+
+```
+
+Above code will send mail to jane@doe.com from default from (from configuration)
+with body from emails/test template.
