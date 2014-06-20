@@ -65,6 +65,8 @@ class Message
             return $this->message->getBody();
         }
 
+        $data['app'] = \Bono\App::getInstance();
+
         if (is_string($template)) {
             $this->message->setBody(App::getInstance()->theme->partial('emails/'.$template, $data));
         } else {
@@ -93,5 +95,10 @@ class Message
         $this->transport = $transport;
 
         return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->message->__toString();
     }
 }
