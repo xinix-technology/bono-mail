@@ -11,7 +11,7 @@ class Mail
     public static $options = array();
 
     protected static $aliases = array(
-        'smtp' => '\\BonoMail\\Transport\\SMTPTransport',
+        'smtp' => 'BonoMail\\Transport\\SMTPTransport',
     );
 
     public static function init($options)

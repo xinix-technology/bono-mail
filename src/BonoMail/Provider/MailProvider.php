@@ -2,8 +2,8 @@
 
 namespace BonoMail\Provider;
 
-use \Bono\Provider\Provider;
-use \BonoMail\Mail;
+use Bono\Provider\Provider;
+use BonoMail\Mail;
 
 class MailProvider extends Provider
 {
